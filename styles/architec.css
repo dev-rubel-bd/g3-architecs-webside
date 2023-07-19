@@ -24,7 +24,7 @@
     font-weight: 400;
 
 }
-.common-titile{
+.common-title{
     color: #131313;
     font-size: 45px;
     font-weight: 700;
@@ -82,6 +82,7 @@ main{
 .team-container{
     display: flex;
     align-items: center;
+    margin: 0px;
 }
 .team-imag{
     display: grid;
@@ -110,10 +111,59 @@ main{
     font-weight: 700;
 
 }
-/* facts sector */
+/* features section */
+.features{
+    margin-top: 130px;
+    display: flex; 
+    gap: 100px;
+
+
+}
+.features-img{
+    height: 90%;
+}
+.features-cart{
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+
+
+} 
+.features-title{
+    color: var(--dark-01, #131313);
+    font-size: 45px;
+    font-weight: 700;
+    width: 468px;
+    border-left: 5px solid #FF900E;
+    padding: 20px;
+}
+.ten-year-badge{
+    width: 32opx;
+    color: #FFF;
+    border-radius: 8px;
+    background: #FF900E;
+    width: 342px;
+    height: 200px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+    right: 30px;
+}
+.ten-year-badge h2{
+    font-size: 4rem;
+    margin: 0px;
+}
+.ten-year-badge p{
+    font-size: 25px;
+}
+/* facts section */
 .facts-cart-container{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 100px;
 }
 .cart{
     border-radius: 8px;
@@ -135,7 +185,7 @@ main{
     margin-top: 5px;
 
 }
-/* sponsors sector */
+/* sponsors section */
 .sponsors{
     text-align: center;
 }
@@ -150,6 +200,22 @@ main{
     width: 165.833px;
     height: 50px;
 }
+/* footer section */
+.footer{
+    width: 1440px;
+    height: 100px;
+    border-radius: 8px;
+    background: #FFF4E7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin: 0px;
+
+}
+.footer-text{
+    text-align: center;
+}
 
 /* responsive midea queries */
 /* mobile device */
@@ -157,7 +223,7 @@ main{
     header ,.facts-cart-container,.common-titile,.ray-text{
         padding: 20px;
     }
-    nav , .team-container ,.facts-cart-container,.sponsers-img-container{
+    nav , .team-container ,.facts-cart-container,.sponsers-img-container,.features{
         flex-direction: column;
     }
 .team-imag{
@@ -167,6 +233,17 @@ main{
     display: flex;
     gap: 20px;
 }
+.features-img img{
+    width: 100%;
+    margin: 0px;
+}
+.ten-year-badge {
+    position: static;
+   max-width: 300px;
+}
+.footer{
+    width: 100%
+}
 }
 /* tablet or mediam device */
 @media screen and (min-width: 576px) and (max-width: 960px) {
@@ -174,8 +251,11 @@ main{
         padding: 50px;
 
     }
-    nav , .team-container ,.facts-cart-container,.sponsers-img-container{
+    nav , .team-container ,.facts-cart-container,.sponsers-img-container,.features{
         flex-direction: column;
+    }
+    .footer{
+        width: 100%
     }
     
 }
